@@ -40,6 +40,18 @@ entries:
     urls:
     - https://github.com/fire-ant/capmvm/releases/download/capmvm-0.8.0/capmvm-0.8.0.tgz
     version: 0.8.0
+  capt:
+  - apiVersion: v2
+    appVersion: 0.4.0
+    created: "2023-03-01T01:00:37.523996087Z"
+    description: A Helm Chart for the cluster-api-provider-tinkerbell infrastructure
+      provider
+    digest: 826ada77f7268e7e6bd9fe62a727f5617fe1120b0fca24e788551ae260abce77
+    name: capt
+    type: application
+    urls:
+    - https://github.com/fire-ant/capt/releases/download/capt-0.4.0/capt-0.4.0.tgz
+    version: 0.4.0
   dependencies:
   - apiVersion: v1
     appVersion: "1.0"
@@ -575,4 +587,4 @@ entries:
     urls:
     - https://github.com/helm/charts-repo-actions-demo/releases/download/example-v2-0.2.2/example-v2-0.2.2.tgz
     version: 0.2.2
-generated: "2023-02-28T10:58:11.320612234Z"
+generated: "2023-03-01T01:00:37.524049488Z"
