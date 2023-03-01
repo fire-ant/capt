@@ -1,0 +1,8 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: {{ include "capt.fullname" . }}-selfsigned-issuer
+  labels:
+  {{- include "capt.labels" . | nindent 4 }}
+spec:
+  selfSigned: {}

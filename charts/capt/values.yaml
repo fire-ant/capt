@@ -1,0 +1,21 @@
+controllerManager:
+  manager:
+    env:
+      tinkerbellIp: <TINKERBELL_IP>
+    image:
+      repository: ghcr.io/tinkerbell/cluster-api-provider-tinkerbell
+      tag: v0.4.0
+    resources:
+      limits:
+        cpu: 200m
+        memory: 200Mi
+      requests:
+        cpu: 100m
+        memory: 20Mi
+  replicas: 1
+kubernetesClusterDomain: cluster.local
+webhookService:
+  ports:
+  - port: 443
+    targetPort: webhook-server
+  type: ClusterIP
